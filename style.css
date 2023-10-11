@@ -1,0 +1,265 @@
+/* Box Model Fix */
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'diodrum';
+}
+
+@font-face {
+    font-family: 'diodrum';
+    src: url('font/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2') format('woff2');
+}
+
+.container {
+    max-width: 77.5rem;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 3.4rem;
+    text-align: center;
+    flex: 100%;
+}
+
+header {
+    background-color: #043D5B;
+    height: 7.2rem;
+}
+
+header>.container {
+    width: 98vw;
+    max-width: 112rem;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+}
+
+header nav {
+    margin-left: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    color: rgb(171, 179, 212);
+}
+
+header nav ul li {
+    padding-right: 2rem;
+    font-size: 1.5rem;
+}
+
+header nav ul li:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+header button {
+    background-color: #FA4D7B;
+    color: #ffffff;
+    height: 2.7rem;
+    width: 11rem;
+    border-radius: 0.25rem;
+    border: none;
+    font-size: 1rem;
+}
+
+header button:hover {}
+
+.our-services {
+    background-color: #F0F0F0;
+    padding-top: 5.2rem;
+}
+
+.our-services>.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.our-services h2 {
+    padding-bottom: 7rem;
+}
+
+.our-services_card {
+    width: 22rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+.our-services_icon {
+    width: 6rem;
+    align-self: center;
+}
+
+.our-services_card h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+.our-services_card p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 2.5rem;
+}
+
+.our-partners {
+    padding-top: 4.7rem;
+    padding-bottom: 8rem;
+}
+
+.our-partners>.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+    gap: 1rem;
+}
+
+.our-partners h2 {
+    padding-bottom: 8.5rem;
+}
+
+.our-partners img {
+    max-width: 11rem;
+}
+
+.our-office {
+    padding-top: 4rem;
+    background-color: #F0F0F0;
+    padding-bottom: 6rem;
+}
+
+.our-office>.container {
+    width: 80vw;
+    max-width: 66rem;
+}
+
+.our-office h2 {
+    padding-bottom: 2.5rem;
+}
+
+.our-office p {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+}
+
+.about-us {
+    background-image: url(imgs/jumbo.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-top: 8rem;
+}
+
+.about-us h2 {
+    font-size: 6.2rem;
+    padding-bottom: 3rem;
+}
+
+.about-us p {
+    font-size: 2rem;
+    text-align: center;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.tools {
+    padding-top: 4rem;
+    padding-bottom: 10rem;
+}
+
+.tools>.container {
+    max-width: 73rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.tools h2 {
+    padding-bottom: 6.4rem;
+}
+
+.tools_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    gap: 2rem;
+}
+
+.tools_card h3 {
+    max-width: 12rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.tools_card img {
+    width: 7rem;
+    margin: 0 auto;
+}
+
+
+footer {
+    background-color: #242424;
+    padding-top: 4.5rem;
+    color: white;
+    padding-bottom: 6rem;
+}
+
+footer>.container {
+    max-width: 38rem;
+}
+
+footer h2 {
+    padding-bottom: 3rem;
+}
+
+footer p {
+    font-size: 2.7rem;
+}
+
+@media (max-width:45rem) {
+    header {
+        height: auto;
+        padding-bottom: 1rem;
+    }
+
+    header>.container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    header nav {
+        margin-left: unset;
+    }
+
+    .our-services>.container, .our-partners>.container {
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+
+}
